@@ -4,6 +4,7 @@ import { CategoriesSection } from "@/components/categories-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
 import { StatsSection } from "@/components/stats-section"
 import { Footer } from "@/components/footer"
+import WaitlistForm from '../WaitlistForm'
 
 export default function Home() {
   return (

@@ -3,6 +3,8 @@
 import { Search, MapPin, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import WaitlistForm from '../WaitlistForm' // путь зависит от расположения файлов
+import AuthButton from './AuthButton'
 
 const locations = [
   { id: "madrid", name: "Madrid" },
@@ -31,6 +33,12 @@ export function HeroSection() {
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-foreground leading-tight mb-6 max-w-4xl mx-auto text-balance">
           Alquila lo que necesitas, gana con lo que no usas
         </h1>
+
+        <WaitlistForm />
+        <div className="mt-4">
+  <AuthButton />
+</div>
+
         
         <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 text-pretty">
           Conectamos a personas que necesitan cosas con quienes las tienen. Ahorra dinero, genera ingresos y cuida el planeta.
